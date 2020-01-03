@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+LIBS:5vpol-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3400 3100 1600 850 
+U 5D85FB70
+F0 "TPS62135 Power Supply" 50
+F1 "TPS62135_psu.sch" 50
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5D938883
+P 7050 3450
+F 0 "J2" H 7130 3442 50  0000 L CNN
+F 1 "OUT" H 7130 3351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 7050 3450 50  0001 C CNN
+F 3 "~" H 7050 3450 50  0001 C CNN
+	1    7050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D938F69
+P 6500 3750
+F 0 "#PWR04" H 6500 3500 50  0001 C CNN
+F 1 "GND" H 6505 3577 50  0000 C CNN
+F 2 "" H 6500 3750 50  0001 C CNN
+F 3 "" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR01
+U 1 1 5D9391B6
+P 2150 3250
+F 0 "#PWR01" H 2150 3100 50  0001 C CNN
+F 1 "VBUS" H 2165 3423 50  0000 C CNN
+F 2 "" H 2150 3250 50  0001 C CNN
+F 3 "" H 2150 3250 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5D9395AE
+P 6500 3250
+F 0 "#PWR03" H 6500 3100 50  0001 C CNN
+F 1 "+5V" H 6515 3423 50  0000 C CNN
+F 2 "" H 6500 3250 50  0001 C CNN
+F 3 "" H 6500 3250 50  0001 C CNN
+	1    6500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3250 6500 3450
+Wire Wire Line
+	6500 3450 6750 3450
+Wire Wire Line
+	6850 3550 6750 3550
+Wire Wire Line
+	6500 3550 6500 3750
+$Comp
+L power:GND #PWR02
+U 1 1 5D939E11
+P 2150 3750
+F 0 "#PWR02" H 2150 3500 50  0001 C CNN
+F 1 "GND" H 2155 3577 50  0000 C CNN
+F 2 "" H 2150 3750 50  0001 C CNN
+F 3 "" H 2150 3750 50  0001 C CNN
+	1    2150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3450 2150 3300
+Wire Wire Line
+	2150 3550 2150 3700
+Wire Wire Line
+	6850 3350 6750 3350
+Wire Wire Line
+	6750 3350 6750 3450
+Connection ~ 6750 3450
+Wire Wire Line
+	6750 3450 6850 3450
+Wire Wire Line
+	6850 3650 6750 3650
+Wire Wire Line
+	6750 3650 6750 3550
+Connection ~ 6750 3550
+Wire Wire Line
+	6750 3550 6500 3550
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5D948501
+P 1450 3450
+F 0 "J1" H 1368 3767 50  0000 C CNN
+F 1 "IN" H 1368 3676 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 1450 3450 50  0001 C CNN
+F 3 "~" H 1450 3450 50  0001 C CNN
+	1    1450 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3650 1700 3650
+Wire Wire Line
+	1700 3650 1700 3550
+Connection ~ 1700 3550
+Wire Wire Line
+	1700 3550 1650 3550
+Wire Wire Line
+	1700 3550 2150 3550
+Wire Wire Line
+	1650 3450 1700 3450
+Wire Wire Line
+	1650 3350 1700 3350
+Wire Wire Line
+	1700 3350 1700 3450
+Connection ~ 1700 3450
+Wire Wire Line
+	1700 3450 2150 3450
+$Comp
+L Diode:1.5KExxA D1
+U 1 1 5D94CDD6
+P 2300 3500
+F 0 "D1" V 2254 3579 50  0000 L CNN
+F 1 "SMAJ15A-13-F" V 2345 3579 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 2300 3300 50  0001 C CNN
+F 3 "" H 2250 3500 50  0001 C CNN
+	1    2300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 3350 2300 3300
+Wire Wire Line
+	2300 3300 2150 3300
+Connection ~ 2150 3300
+Wire Wire Line
+	2150 3300 2150 3250
+Wire Wire Line
+	2300 3650 2300 3700
+Wire Wire Line
+	2300 3700 2150 3700
+Connection ~ 2150 3700
+Wire Wire Line
+	2150 3700 2150 3750
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5D9BEBA1
+P 4200 4500
+F 0 "H1" H 4300 4549 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4300 4458 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 4200 4500 50  0001 C CNN
+F 3 "~" H 4200 4500 50  0001 C CNN
+	1    4200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5D9BF477
+P 4200 4600
+F 0 "#PWR013" H 4200 4350 50  0001 C CNN
+F 1 "GND" H 4205 4427 50  0000 C CNN
+F 2 "" H 4200 4600 50  0001 C CNN
+F 3 "" H 4200 4600 50  0001 C CNN
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L meansOfCircuitDesign:Fully_Automated_Logo G1
+U 1 1 5D9D6353
+P 2200 4700
+F 0 "G1" H 2300 4450 60  0001 C CNN
+F 1 "Fully_Automated_Logo" H 2200 4990 60  0001 C CNN
+F 2 "Automated:fully_automated_logo_soldermask" H 2200 4700 50  0001 C CNN
+F 3 "" H 2200 4700 50  0001 C CNN
+	1    2200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DA1F99B
+P 5750 3750
+F 0 "#PWR0101" H 5750 3500 50  0001 C CNN
+F 1 "GND" H 5755 3577 50  0000 C CNN
+F 2 "" H 5750 3750 50  0001 C CNN
+F 3 "" H 5750 3750 50  0001 C CNN
+	1    5750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5DA1F9A1
+P 5750 3250
+F 0 "#PWR0102" H 5750 3100 50  0001 C CNN
+F 1 "+5V" H 5765 3423 50  0000 C CNN
+F 2 "" H 5750 3250 50  0001 C CNN
+F 3 "" H 5750 3250 50  0001 C CNN
+	1    5750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA23798
+P 5750 3600
+AR Path="/5D85FB70/5DA23798" Ref="R?"  Part="1" 
+AR Path="/5DA23798" Ref="R6"  Part="1" 
+F 0 "R6" H 5809 3646 50  0000 L CNN
+F 1 "2k2" H 5809 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5750 3600 50  0001 C CNN
+F 3 "~" H 5750 3600 50  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3700 5750 3750
+$Comp
+L Device:LED_Small_ALT D2
+U 1 1 5DA2463F
+P 5750 3400
+F 0 "D2" V 5796 3332 50  0000 R CNN
+F 1 "LED_Small_ALT" V 5705 3332 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 5750 3400 50  0001 C CNN
+F 3 "~" V 5750 3400 50  0001 C CNN
+	1    5750 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 3300 5750 3250
+$EndSCHEMATC
