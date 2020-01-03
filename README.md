@@ -1,4 +1,4 @@
-# 17-V Point-of-Load TPS62135
+# 16-V Input 4-A Output Point-of-Load with TPS62135
 
 ## Overview
 
