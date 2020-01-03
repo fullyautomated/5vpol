@@ -29,7 +29,7 @@ To achieve 20-ish uA standby current, remove the output indicator LED D2 or its 
 |                          Mounting Hole: | M3 at (-6;-4)mm from bottom right corner                           |
 |                          Input Voltage: | 3V - 16V                                                           |
 |                         Output Voltage: | 5.0V (default)<br>Optionally between 0.8V and 12V                  |
-|             Internal Reference Voltage: | 0.8V                                                               |
+|             Internal Reference Voltage: | 0.7V                                                               |
 |                          Output Ripple: | 45mVpp with no load<br>30mVpp in Continuous Conduction Mode        |
 |                         Output Current: | 4A peak<br>3.4A continuous                                         |
 |                            Power Stage: | Synchronous buck with nMOS switches                                |
