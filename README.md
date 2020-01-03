@@ -20,6 +20,8 @@ Alternatively, you can disconnect the input.
 
 To achieve 20-ish uA standby current, remove the output indicator LED D2 or its series resistor R6.
 
+This DC/DC can run in 100% duty cycle mode, when the input voltage is lower or equals to the set output voltage.
+
 ## Properties
 
 |                          Specifications |                                                                    |
@@ -32,6 +34,7 @@ To achieve 20-ish uA standby current, remove the output indicator LED D2 or its 
 |             Internal Reference Voltage: | 0.7V                                                               |
 |                          Output Ripple: | 45mVpp with no load<br>30mVpp in Continuous Conduction Mode        |
 |                         Output Current: | 4A peak<br>3.4A continuous                                         |
+|                     Maximum Duty Cylce: | 100%                                                               |
 |                            Power Stage: | Synchronous buck with nMOS switches                                |
 |             Overtemperature Protection: | Yes, at 160 degrees Celsius, with 20 dC hysteresis                 |
 |               Short Circuit Protection: | Yes, at 6A                                                         |
@@ -43,7 +46,6 @@ To achieve 20-ish uA standby current, remove the output indicator LED D2 or its 
 |                          Soft Shutdown: | Yes (by pulling EN pin low)                                        |
 |                    Output ON Indicator: | Yes. (pink LED)                                                    |
 |                      Power Good Output: | Yes.                                                               |
-|              Fixed Switching Frequency: | No. <br>In Continuous Conduction Mode fSW is approx. 340 kHz       |
 |                                   RoHS: | Yes, plus tantalum-free.                                           |
 
 ![](/render.png "Render of the board with pins labeled")
