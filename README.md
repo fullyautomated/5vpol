@@ -46,7 +46,7 @@ To achieve 20-ish uA standby current, remove the output indicator LED D2 or its 
 |              Fixed Switching Frequency: | No. <br>In Continuous Conduction Mode fSW is approx. 340 kHz       |
 |                                   RoHS: | Yes, plus tantalum-free.                                           |
 
-![](5vpol/render.png "Render of the board with pins labeled")
+![](/render.png "Render of the board with pins labeled")
 
 ## Test report
 
